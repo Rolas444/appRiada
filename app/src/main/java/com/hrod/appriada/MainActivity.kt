@@ -25,44 +25,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MainComposable()
         }
     }
 }
 
-@Composable
-fun MainComposable(modifier: Modifier = Modifier) {
-    Column (modifier = Modifier
-        .fillMaxSize()
-        .background(Color.Green),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        Text(
-            text = "Hellow Mundo"
-        )
-        Text(text = "Esta es mi segunda Linea")
-    }
-}
-
-@Composable
-fun RowsApp(modifier: Modifier = Modifier) {
-    Row {
-        Button(onClick = { /*TODO*/ }) {
-
-        }
-
-        Button(onClick = { /*TODO*/ }) {
-
-        }
-        Button(onClick = { /*TODO*/ }) {
-
-        }
-    }
-}
-
-@Preview(name = "my preview", showSystemUi = true)
-@Composable
-fun ComposablePreview(modifier: Modifier = Modifier) {
-    MainComposable()
-}
