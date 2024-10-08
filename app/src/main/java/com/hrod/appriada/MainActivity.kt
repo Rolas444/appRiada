@@ -18,6 +18,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import com.hrod.appriada.presentation.on_boarding.OnBoardingScreen
+import com.hrod.appriada.presentation.welcome.WelcomeScreen
 import com.hrod.appriada.ui.theme.AppRiadaTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,6 +27,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            OnBoardingScreen()
         }
     }
 }
